@@ -10,31 +10,34 @@ def get_employee_name():
 
 def get_hours_worked():
     while True:
+        
         try:
 
-            hours = float(input("Enter hours worked:"))
-            if hours >= 0: 
+            hour = int (input("Enter hours worked: "))
+            if hour >= 0: 
              rate_per_hour = 20.0
-             total_pay = hours * rate_per_hour
-             print(f"Total pay for {hours} hours worked is: ${total_pay:.2f}")
-             return hours
-           else:
-            print("Hours worked cannot be negative. Please try again. ")
+             total_pay = hour * rate_per_hour
+             print(f"Total pay for {hours} hours worked is: ${total_pay:.2f}") # type: ignore
+             return hours # type: ignore
+        else:
+
+             print("Hours worked cannot be negative. Please try again. ")
+
         except ValueError:
-            print("Please enter a valid number. ")
+             print("Please enter a valid number. ")
 def calculate_pay(hours, rate, tax_rate):
-    gross_pay = hours * pay_rate
+    gross_pay = hours * pay_rate # type: ignore
     tax = gross_pay * tax_rate
     net = gross_pay - tax
-    employee_details
-    return employee_details
+    employee_details # type: ignore
+    return employee_details # type: ignore
 def display_employee_details(name, hours, pay_rate, tax_rate, employee_details):
     print(f"The employee name is {name}. ")
     print(f"The hours worked is {hours}. ")
     print(f"The employee's tax rate is {tax_rate}. ")
     print(f"The employee's pay rate is {pay_rate}. ")
     print(f"The employee's gross pay is {employee_details[0]. ")
-    print(f"The empoyee's tax is {employee_details{1}. ")
+    print(f"The empoyee's tax is {employee_details {1}. ")
     print(f"The employee's net pay is {employee_details{2}. ")
 def totals(employees, total_hours, hours, total_gross, total_tax,total_net, employee_details. ")
         employee += 1
@@ -67,4 +70,5 @@ def main():
     pass
 
 if_name_ == "_main_-:
+
   main()
